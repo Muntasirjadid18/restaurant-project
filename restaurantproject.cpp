@@ -21,9 +21,9 @@ struct Order {
 
 class Restaurant {
 private:
-    Dish* menuRoot; // Root of the BST for menu items
-    Order orders[100]; // Array to store orders
-    int orderSize; // Current number of orders
+    Dish* menuRoot; 
+    Order orders[100]; 
+    int orderSize; 
 
     Dish* insertDish(Dish* root, const string& name, double price) {
         if (root == nullptr) {
@@ -135,7 +135,7 @@ public:
         }
         cout << "Total: $" << total << "\n";
         cout << "-----------------------------------------------\n";
-        orderSize = 0; // Clear orders after billing
+        orderSize = 0; 
     }
 };
 
@@ -150,7 +150,7 @@ int main() {
     restaurant.addDish("Steak", 25.00);
 
     while (true) {
-        restaurant.displayMenu(); // Display menu always
+        restaurant.displayMenu(); 
         cout << "\n\n\n------------------ ||Restaurant|| ------------------\n";
         cout << "1. Take Order\n";
         cout << "2. Generate Bill\n";
